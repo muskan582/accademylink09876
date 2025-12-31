@@ -4,10 +4,172 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>The TRADE ROOM OFFICIAL
- | Join Now</title>
+<title>Ce & Pe EduempireX | Learning Community</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:Poppins,Arial;
+  background:#07091a;
+  color:#e5e7ff;
+}
+
+/* GLOBAL */
+section{padding:50px 8%;}
+
+/* HERO */
+.hero{
+  padding:120px 8% 80px;
+  text-align:center;
+  background:linear-gradient(130deg,#0c102e,#07091a);
+}
+.hero h1{
+  font-size:38px;
+  background:linear-gradient(90deg,#ffd54a,#ffffff);
+  -webkit-background-clip:text;
+  color:transparent;
+}
+.hero p{
+  margin-top:12px;
+  color:#b8c0ff;
+  max-width:700px;
+  margin-inline:auto;
+}
+
+/* GOLD BUTTONS */
+.btn,
+.join-btn,
+.sticky-join{
+  background:linear-gradient(135deg,#ffd000,#ff8500);
+  color:#000;
+}
+
+.btn{
+  margin-top:22px;
+  padding:14px 30px;
+  border-radius:40px;
+  border:none;
+  font-size:15px;
+  cursor:pointer;
+  font-weight:600;
+  transition:.3s;
+}
+.btn:hover{transform:scale(1.05);}
+
+/* TITLES */
+.title{
+  text-align:center;
+  font-size:28px;
+  color:#fff;
+  margin-bottom:12px;
+}
+
+/* PILLARS */
+.pillars{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:16px;
+}
+.card{
+  padding:22px;
+  background:rgba(255,255,255,0.06);
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.1);
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  background:rgba(255,255,255,0.12);
+}
+.card h3{color:#ffd84d;margin-bottom:6px;}
+
+/* ABOUT */
+.about{
+  background:#0b0f2f;
+  border-top:1px solid rgba(255,255,255,0.1);
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+.about p{
+  max-width:750px;
+  margin:auto;
+  text-align:center;
+  line-height:1.7;
+  color:#c8d0ff;
+}
+.warning{
+  margin-top:16px;
+  padding:15px;
+  text-align:center;
+  border-radius:10px;
+  color:#ffe477;
+  background:rgba(255,227,77,0.08);
+  border:1px solid rgba(255,200,0,0.4);
+}
+
+/* FEEDBACK */
+.feedback-box{
+  max-width:850px;
+  margin:auto;
+  display:grid;
+  gap:14px;
+}
+.feedback{
+  padding:18px;
+  border-radius:12px;
+  background:rgba(255,255,255,0.06);
+  border:1px solid rgba(255,255,255,0.12);
+}
+.feedback strong{
+  display:block;
+  margin-top:6px;
+  color:#ffd84d;
+  font-size:14px;
+}
+
+/* CTA */
+.cta{text-align:center;}
+.join-btn{
+  padding:14px 32px;
+  border-radius:40px;
+  border:none;
+  font-weight:700;
+  cursor:pointer;
+  transition:.3s;
+}
+.join-btn:hover{transform:scale(1.05);}
+
+/* STICKY BUTTON CENTER */
+.sticky-join{
+  position:fixed;
+  bottom:18px;
+  left:50%;
+  transform:translateX(-50%);
+  padding:14px 34px;
+  border-radius:40px;
+  font-weight:800;
+  border:none;
+  cursor:pointer;
+  z-index:9999;
+  box-shadow:0 10px 25px rgba(0,0,0,.4);
+}
+.sticky-join:hover{transform:translateX(-50%) scale(1.08);}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:18px 10px;
+  font-size:13px;
+  color:#bfbfff;
+}
+
+@media(max-width:600px){
+.hero h1{font-size:30px;}
+}
+</style>
+</head>
 <!-- 🔥 Dynamic Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -32,141 +194,107 @@ fbq('track', 'PageView', { uuid: "7995bc68-f9fa-4001-9c34-3503d6a72e95" });
 src="https://www.facebook.com/tr?id=4291218974443289&ev=PageView&noscript=1"/>
 </noscript>
 
-<!-- ------------------ CSS ------------------- -->
-<style>
-*{margin:0;padding:0;box-sizing:border-box;}
-
-body{
-    font-family:Poppins,Arial,sans-serif;
-    background:#ffffff;
-    text-align:center;
-    padding:0;
-}
-
-.header{
-    width:100vw;
-    background:#00AEEF;
-    color:white;
-    padding:14px 0;
-    font-size:16px;
-    font-weight:600;
-    margin-bottom:18px;
-}
-
-.icon{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    object-fit:cover;
-    margin:20px auto;
-    display:block;
-}
-
-.title{ font-size:28px;font-weight:bold; }
-.members{ font-size:18px;margin:8px 0;color:#444; }
-.emoji{ font-size:22px;margin:12px 0; }
-
-.description{
-    font-size:18px;
-    line-height:1.55;
-    color:#333;
-    margin:14px auto;
-    max-width:300px;
-}
-
-.countdown{
-    font-size:24px;
-    font-weight:bold;
-    color:#d80000;
-    margin:20px 0;
-}
-
-.telegram-link{
-    background:#0088cc;
-    color:white;
-    max-width:250px;
-    padding:15px;
-    display:block;
-    margin:12px auto;
-    font-size:20px;
-    border-radius:12px;
-    font-weight:bold;
-    text-decoration:none;
-    transition:.2s;
-}
-.telegram-link:hover{ transform:scale(1.05); }
-
-.note{ font-size:14px;margin-top:10px;color:#666; }
-
-.maintained{
-    margin:25px 0;
-    font-size:18px;
-    color:#000;
-}
-.maintained a{
-    color:#007BFF !important;
-    font-weight:bold;
-    text-decoration:none;
-}
-
-@media (max-width: 600px){
-    .icon{width:120px;height:120px;}
-    .title{font-size:26px;}
-    .emoji{font-size:20px;}
-    .members{font-size:17px;}
-    .description{font-size:17px;max-width:90%;}
-    .telegram-link{font-size:18px;padding:12px;max-width:230px;}
-    .countdown{font-size:22px;}
-    .note,.maintained{font-size:15px;}
-}
-
-@media (min-width:800px){
-    .icon{width:130px;height:130px;}
-    .title{font-size:22px;}
-    .emoji{font-size:18px;}
-    .members{font-size:15px;}
-    .description{font-size:15px;max-width:350px;}
-    .telegram-link{max-width:220px;padding:12px;font-size:17px;}
-    .countdown{font-size:19px;}
-    .note{font-size:13px;}
-    .maintained{font-size:15px;}
-}
-</style>
-</head>
-
 <body>
 
-<div class="header">
-    Don't have Telegram? 
-    <a href="https://telegram.me/+TRlJl628l-FkMWE9" style="color:white;text-decoration:underline;" target="_blank">
-        Download Telegram
-    </a>
-</div>
+<!-- HERO -->
+<section class="hero" data-aos="fade-up">
+  <h1>The TRADE ROOM OFFICIAL
+</h1>
+  <p>A premium learning-focused trading community to understand The TRADE ROOM OFFICIAL
+ Market Psychology • Discipline</p>
+  <a href="https://t.me/+FWM33-43OxozNTk1">
+    <button class="btn">Join Learning Community</button>
+  </a>
+</section>
 
-<img src="https://thinkbigx.sbs/wp-content/uploads/2025/12/tradde-room.jpg" class="icon">
+<!-- PILLARS -->
+<section>
+  <h2 class="title" data-aos="fade-up">Our Learning Pillars</h2>
 
-<h2 class="title">The TRADE ROOM OFFICIAL
+  <div class="pillars">
+    <div class="card" data-aos="zoom-in">
+      <h3>Concept Clarity</h3>
+      <p>Understand The TRADE ROOM OFFICIAL
+ with crystal-clear logic.</p>
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+      <h3>Daily Learning</h3>
+      <p>Charts • Breakdown • Discussions to build consistency.</p>
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+      <h3>Risk Discipline</h3>
+      <p>Mindset • Capital safety • Practical learning.</p>
+    </div>
+
+    <div class="card" data-aos="zoom-in">
+      <h3>Positive Community</h3>
+      <p>Learn together • Grow together • Supportive vibe.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+  <h2 class="title" data-aos="fade-up">About The TRADE ROOM OFFICIAL
 </h2>
-<p class="members">98,786 members</p>
-<p class="emoji">Insight Today. Confidence Tomorrow.</p>
-<p class="description">Grow Your Skills, Not Just Trades.<br />
-Decode the Markets with Clarity.</p>
+  <p data-aos="fade-up">
+    We help traders learn step-by-step with clarity, discipline & confidence
+    so they understand markets instead of blindly following.
+  </p>
 
-<p class="countdown">Invitation closes in <span id="timer">10</span>s ⏳</p>
+  <div class="warning" data-aos="fade-up">
+    ⚠ Not SEBI Registered • Educational Purpose Only • Trading involves risk — No guaranteed returns.
+  </div>
+</section>
 
-<a href="https://t.me/+FWM33-43OxozNTk1" 
-   class="telegram-link"
-   onclick="fbq('track', 'JoinClick', {uuid:'7995bc68-f9fa-4001-9c34-3503d6a72e95'})">
-   View in Telegram 🚀
+<!-- FEEDBACK -->
+<section>
+  <h2 class="title" data-aos="fade-up">Community Feedback</h2>
+
+  <div class="feedback-box">
+    <div class="feedback" data-aos="fade-right">
+      “Helped me finally understand The TRADE ROOM OFFICIAL
+ clearly.” 
+      <strong>— Rahul Sharma</strong>
+    </div>
+
+    <div class="feedback" data-aos="fade-right">
+      “No fake promises… Only genuine learning.”
+      <strong>— Arjun Gupta</strong>
+    </div>
+
+    <div class="feedback" data-aos="fade-right">
+      “Perfect for beginners. Clear & step-by-step explained.”
+      <strong>— Priya Kapoor</strong>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2 class="title" data-aos="fade-up">Join Our Telegram Learning Community</h2>
+  <p data-aos="fade-up">Start your disciplined learning journey today.</p>
+
+  <a href="https://t.me/+FWM33-43OxozNTk1">
+    <button class="join-btn" data-aos="zoom-in">Join Now</button>
+  </a>
+</section>
+
+<footer>
+  © 2025 The TRADE ROOM OFFICIAL
+ • Educational Community — No Profit Guarantee
+</footer>
+
+<!-- Sticky Center Button -->
+<a href="https://t.me/+FWM33-43OxozNTk1">
+  <button class="sticky-join">Join Telegram</button>
 </a>
 
-<p class="note">Instant access if Telegram is installed.</p>
-<p class="maintained">Ads Managed by <a href="https://telegram.me/+TRlJl628l-FkMWE9">@Nexgroww_agency</a></p>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-let sec = 10;
-const t = document.getElementById("timer");
-setInterval(()=>{ if(sec > 0){ sec--; t.textContent = sec; } },1000);
+AOS.init({ duration:1000, once:true });
 </script>
 
 </body>
